@@ -1,20 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 16:24:16 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/23 17:19:18 by johmatos         ###   ########.fr       */
+/*   Created: 2022/03/23 17:19:50 by johmatos          #+#    #+#             */
+/*   Updated: 2022/03/23 17:54:29 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int	aux;
-
-	aux = *a;
-	*a = *b;
-	*b = aux;
+	*div = a / b;
+	*mod = a % b;
 }
