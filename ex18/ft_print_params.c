@@ -6,16 +6,11 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 17:50:21 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/29 00:51:58 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/29 01:02:49 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_strtochar(char *str)
 {
