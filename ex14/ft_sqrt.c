@@ -6,24 +6,20 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 15:56:35 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/24 16:44:21 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/29 00:35:37 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#define MAX_INT_ROOT 46340
+
 int	ft_sqrt(int nb)
 {
-	int	count;
-	int	n;
+	int	x;
 
-	n = 1;
-	count = 0;
-	while (n <= nb)
-	{
-		nb -= n;
-		count += 1;
-		if (nb == 0)
-			break ;
-		n += 2;
-	}
-	return (count);
+	x = 0;
+	while ((x * x) < nb && x <= MAX_INT_ROOT)
+		x++;
+	if ((x * x) == nb)
+		return (x);
+	return (0);
 }
