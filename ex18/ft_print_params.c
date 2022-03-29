@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 17:50:21 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/25 11:08:50 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/29 00:01:14 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	main(int argc, char *argv[])
 			str_po++;
 		}
 		str_po = 0;
-		ft_putchar('\n');
 		count++;
 	}
 	return (0);
