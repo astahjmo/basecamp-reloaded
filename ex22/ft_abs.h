@@ -6,8 +6,8 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:58:09 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/30 14:22:49 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/30 15:27:37 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(value)  ((value) < (0)) ? (value * -1): (value);
+#define ABS(value)  (value < 0 ? value : -value);
