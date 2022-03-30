@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:19:46 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/29 16:23:18 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/30 14:23:14 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *destination, char *source, int len)
 
 	d = destination;
 	count = 0;
-	while (source[count])
+	while (source[count] || count <= len)
 	{
 		d[count] = source[count];
 		count++;
