@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:19:46 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/30 15:07:53 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/03/31 17:36:14 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@ void	*ft_memcpy(void *destination, char *source, int len)
 
 	d = destination;
 	count = 0;
-	while (source[count] || count <= len)
+	while (source[count] || count < len)
 	{
 		d[count] = source[count];
 		count++;
 	}
-	d[count] = '\0';
 	return (d);
 }
 
@@ -48,5 +47,4 @@ char	*ft_strdup(char *src)
 	if (new == NULL)
 		return (NULL);
 	return ((char *) ft_memcpy(new, src, len));
-	free(new);
 }
