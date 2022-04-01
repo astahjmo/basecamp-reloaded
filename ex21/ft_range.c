@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:23:27 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/31 17:30:38 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/01 11:40:38 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ int	*ft_range(int min, int max)
 	count = 0;
 	if (min >= max)
 		return (p);
-	p = malloc(sizeof(int) * max);
+	p = malloc(sizeof(int) * (max + (-1 * min)));
 	if (p == NULL)
 		return (p);
-	p[count] = min;
-	while (++count < max)
-		p[count] = ++min;
+	while (min < max)
+		p[count++] = min++;
 	return (p);
 }

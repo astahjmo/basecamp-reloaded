@@ -6,24 +6,25 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:19:46 by johmatos          #+#    #+#             */
-/*   Updated: 2022/03/31 17:36:14 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/01 11:40:02 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_memcpy(void *destination, char *source, int len)
+char	*ft_memcpy(void *destination, char *source, int len)
 {
 	int		count;
 	char	*d;
 
 	d = destination;
 	count = 0;
-	while (source[count] || count < len)
+	while (source[count] && count < len)
 	{
 		d[count] = source[count];
 		count++;
 	}
+	d[count] = '\0';
 	return (d);
 }
 
@@ -34,17 +35,17 @@ int	ft_strlen(char *src)
 	count = 0;
 	while (src[count])
 		count++;
-	return (count);
+	return (count + 1);
 }
 
 char	*ft_strdup(char *src)
 {
 	int		len;
-	void	*new;
+	char	*new;
 
-	len = ft_strlen(src) + 1;
+	len = ft_strlen(src);
 	new = malloc(len);
 	if (new == NULL)
 		return (NULL);
-	return ((char *) ft_memcpy(new, src, len));
+	return (ft_memcpy(new, src, len));
 }
