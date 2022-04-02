@@ -1,13 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 16:58:09 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/01 20:27:17 by johmatos         ###   ########.fr       */
+/*   Created: 2022/04/02 11:29:26 by johmatos          #+#    #+#             */
+/*   Updated: 2022/04/02 11:50:21 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# define ABS(x) (x > 0 ? x : -x)
+void	ft_foreach(int *tab, int length, void (*f) (int))
+{
+	int	count;
+
+	count = 0;
+	while (count < length)
+	{
+		f(tab[count]);
+		count++;
+	}
+}
