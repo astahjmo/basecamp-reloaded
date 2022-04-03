@@ -6,14 +6,14 @@
 #    By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 12:40:09 by johmatos          #+#    #+#              #
-#    Updated: 2022/04/02 21:37:29 by johmatos         ###   ########.fr        #
+#    Updated: 2022/04/02 22:50:35 by johmatos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 LIB_NAME		= ft_display_file
 SRCS 			= ./src
 INCLUDES 		= ./include
-C_FILES 		= ft_print_str.c main.c ft_display_file ft_parser
+C_FILES 		= ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
 C_FLAGS 		= -Wall -Wextra -Werror
 COMPILER 		= gcc
 OBJS 			:= $(C_FILES:$.c=o)
