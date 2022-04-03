@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 20:37:08 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/02 20:58:42 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/02 22:12:16 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ int	ft_open_file(char *path)
 	file = open(path, 'r');
 	if (!file)
 		return (0);
-
-	result = read (file,buffer,B_SIZE);
+	result = read(file, buffer, B_SIZE);
 	if (result < 0)
 		return (0);
 	ft_print_str(buffer);

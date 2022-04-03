@@ -12,9 +12,8 @@
 /* ************************************************************************** */
 
 #include "../include/ft_display_file.h"
-#include <stdio.h>
 
-int ft_parser(char *path)
+int	ft_parser(char *path)
 {
 	return (ft_open_file(path));
 }

@@ -6,13 +6,13 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:55:51 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/02 18:57:56 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/02 22:12:47 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_str(char *str)
+void	ft_print_str(char *str)
 {
 	int	count;
 

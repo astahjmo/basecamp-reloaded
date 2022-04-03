@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 13:06:47 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/02 20:57:28 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/02 22:09:18 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdio.h>
+
 typedef int			t_file;
-int				ft_parser(char *str);
+int					ft_parser(char *str);
 void				ft_print_str(char *str);
 int					ft_open_file(char *path);
 
