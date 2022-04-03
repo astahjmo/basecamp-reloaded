@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 11:43:35 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/02 13:01:58 by johmatos         ###   ########.fr       */
+/*   Created: 2022/04/02 18:55:51 by johmatos          #+#    #+#             */
+/*   Updated: 2022/04/02 18:57:56 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_count_if(char **tab, int (*f) (char*))
+void ft_print_str(char *str)
 {
-	int		count;
-	int		ca_return;
-	int		arr_index;
+	int	count;
 
 	count = 0;
-	arr_index = 0;
-	while (tab[arr_index])
+	while (str[count])
 	{
-		ca_return = f (tab[arr_index]);
-		if (ca_return == 1)
-			count += 1;
-		arr_index++;
+		write(1, &str[count], 1);
+		count++;
 	}
-	return (count);
 }
