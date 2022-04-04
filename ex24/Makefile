@@ -6,13 +6,13 @@
 #    By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 12:40:09 by johmatos          #+#    #+#              #
-#    Updated: 2022/04/02 22:50:35 by johmatos         ###   ########.fr        #
+#    Updated: 2022/04/02 23:25:26 by johmatos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-LIB_NAME		= ft_display_file
-SRCS 			= ./src
-INCLUDES 		= ./include
+LIB_NAME		= libft.a
+SRCS 			= ./srcs
+INCLUDES 		= ./includes
 C_FILES 		= ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
 C_FLAGS 		= -Wall -Wextra -Werror
 COMPILER 		= gcc
